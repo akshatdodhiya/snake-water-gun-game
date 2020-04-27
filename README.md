@@ -1,0 +1,1 @@
+The advanced single player Snake Water or Gun game in which user can play against the computer, this game uses emoji and colors to make the game more attractive
