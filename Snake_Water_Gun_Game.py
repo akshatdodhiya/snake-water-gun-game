@@ -6,6 +6,9 @@ from simple_colors import *  # pip install simple_colors
 
 
 def intro():
+    """
+    Function to print the basic introduction about te game
+    """
     columns = shutil.get_terminal_size().columns
 
     print(magenta("SNAKE (🐍) WATER (💧) GUN (🔫)".center(columns)))  # Printing the name of the game
@@ -17,7 +20,7 @@ def intro():
     sleep(2)  # Making program to sleep to execute next part of the program after sometime
 
 
-intro()  # Calling the function intro to introduce the game
+intro()  # Calling the function intro() to introduce the game
 
 computer_choice, user_choice = "", ""  # Declaring variables to store choices
 computer_points, user_points, flag, chance = 0, 0, 0, 0  # Variables :
@@ -96,7 +99,10 @@ def results():
             flag = 1  # Changing flag value to iterate the loop again in same chance
 
 
-def replay_game():  # Function to ask and store the choice of the user for replaying the game
+def replay_game():
+    """
+    Function to ask and store the choice of the user for replaying the game
+    """
     while 1:  # infinite loop till the user enters a valid choice
         print("DO YOU WANT TO PLAY AGAIN ? \nENTER Y FOR YES AND N FOR NO")
         # Giving choice to the user for replaying the game
@@ -113,7 +119,7 @@ def replay_game():  # Function to ask and store the choice of the user for repla
             continue  # executing the loop again due to invalid input given by the user
 
 
-while 1:
+while 1:  # Infinite loop to play the game as many times as the user wants
     computer_points, user_points, flag, chance = 0, 0, 0, 0  # Initialising values to zero at the beginning of the game
     computer_choice, user_choice, replay = "", "", ""  # Emptying strings at the beginning of the game
 
@@ -151,6 +157,7 @@ while 1:
 
     if replay == "n" or replay == "no":
         print(red("\n\t\t\tSAD TO SEE YOU GO !!", 'bold'), emojize(":disappointed_face:"))  # Printing exit statement
-        break  # breaking the loop and exiting the game
+        exit()  # exiting the game
     if replay == "y" or replay == "yes":
         print(green("\n\t\t\tYO LET'S PLAY AGAIN", 'bold'), emojize(":smiling_face_with_smiling_eyes:"))
+        # Printing a statement and replaying the game
