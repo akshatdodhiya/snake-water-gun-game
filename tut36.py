@@ -19,10 +19,10 @@ print("Function : ", minus(9, 4), "Lambda :", subtract(9, 4))
 
 # def a_first(a):  # This is an example of sorting using function
 #     return a[1]
-a = [[4,7], [7,4], [9,5]]
+a = [[4, 7], [7, 4], [9, 5]]
 # a.sort(key=a_first)  # This is the part of sorting using function
 
-a.sort(key=lambda x:x[1])
+a.sort(key=lambda x: x[1])
 # --> The above statement means that lambda will create a function which will return the value on index number 1 of
 # any input given to it
 # --> It is the property of sort function that it takes 'key=' as a function's name as written on line 23
