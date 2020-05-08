@@ -2,7 +2,7 @@
 from emoji import emojize  # pip install emoji
 import random
 from time import sleep
-import shutil  # pip install shutil
+import shutil
 from simple_colors import *  # pip install simple_colors
 
 
