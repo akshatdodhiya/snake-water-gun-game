@@ -1,2 +1,2 @@
 # snake-water-gun-game
-The advanced single player Snake Water or Gun game in which user can play against the computer, this game uses emoji and colors to look more attractive
+The advanced single player Snake-Water-Gun game in which user can play against the computer. This game uses emojis and colors for better interaction.
